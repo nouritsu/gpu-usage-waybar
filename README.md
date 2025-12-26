@@ -30,7 +30,7 @@ Add a custom module to Waybar
 
 Add a module to the top of the config specifying where the module should be positioned
 
-```json
+```jsonc
 "modules-left": ["...", "custom/gpu-usage", "..."]
 ```
 
@@ -38,7 +38,7 @@ Add the custom module to the config
 
 ```json
 "custom/gpu-usage": {
-  "format": "{} {icon}",
+  "format": "{} {icon}", /* "{text} {icon}" for nightly users */
   "exec": "gpu-usage-waybar",
   "return-type": "json",
   "format-icons": "󰾲",
